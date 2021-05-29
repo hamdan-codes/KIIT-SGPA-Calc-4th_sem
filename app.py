@@ -13,8 +13,8 @@ def index():
 @app.route('/sent', methods=['POST','GET'])
 def login():
 
-	subjects = ['AFL', 'COA', 'DMS', 'OS', 'CE', 'WT', 'B_COM', 'CE_LAB', 'OS_LAB', 'WT_LAB']
-	credits = [4, 4, 3, 3, 4, 3, 1, 1.5, 1, 1]
+	subjects = ['AFL', 'COA', 'DBMS', 'OS', 'PDC', 'WT', 'B_COM', 'DBMS_LAB', 'OS_LAB', 'WT_LAB']
+	credits = [4, 4, 4, 3, 4, 3, 1, 1, 1, 1]
 	credits_got = 0
 	credits_total = 0
 	l = len(subjects)
