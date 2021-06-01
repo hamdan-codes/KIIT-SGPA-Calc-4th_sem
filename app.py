@@ -22,6 +22,8 @@ def login():
 		marks_string = request.form[subjects[i]]
 		if marks_string != '':
 			marks = int(marks_string)
+			if(marks==100)
+				credits_got+=10*credits[i]
 			credits_got += ((marks // 10) + 1) * (credits[i])
 			credits_total += credits[i]
 	SGPA = credits_got / credits_total
